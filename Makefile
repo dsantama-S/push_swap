@@ -1,5 +1,5 @@
 LIB		=	push_swap.h
-SRCS	=	push_swap.c sw_ps.c
+SRCS	=	push_swap.c sw_ps.c rotate.c
 			
 OBJS	=	$(SRCS:.c=.o)
 NAME	=	push_swap

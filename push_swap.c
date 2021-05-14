@@ -6,7 +6,7 @@
 /*   By: dsantama <dsantama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/12 10:24:52 by dsantama          #+#    #+#             */
-/*   Updated: 2021/05/14 11:31:39 by dsantama         ###   ########.fr       */
+/*   Updated: 2021/05/14 13:30:17 by dsantama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 
 void sort(t_data *data)
 {
-	swap_a(data);
 	push_b(data);
 	push_b(data);
+	push_b(data);
+	push_b(data);
+	push_b(data);
+	rotate_b(data);
 }
 
 void init(char **argv, t_data *data)

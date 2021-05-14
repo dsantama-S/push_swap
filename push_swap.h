@@ -6,7 +6,7 @@
 /*   By: dsantama <dsantama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/12 10:24:42 by dsantama          #+#    #+#             */
-/*   Updated: 2021/05/14 11:31:51 by dsantama         ###   ########.fr       */
+/*   Updated: 2021/05/14 13:24:13 by dsantama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,12 @@ typedef struct		s_data
 void 				init(char **argv, t_data *data);
 void 				sort(t_data *data);
 int 				push_b(t_data *data);
+int 				push_a(t_data *data);
 int					swap_b(t_data *data);
 int 				swap_a(t_data *data);
+void 				swap_ss(t_data *data);
+void 				rev_rotate_a(t_data *data);
+void 				rev_rotate_b(t_data *data);
+void 				rotate_a(t_data *data);
+void 				rotate_b(t_data *data);
 #endif

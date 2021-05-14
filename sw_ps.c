@@ -6,7 +6,7 @@
 /*   By: dsantama <dsantama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/12 12:01:25 by dsantama          #+#    #+#             */
-/*   Updated: 2021/05/14 11:33:23 by dsantama         ###   ########.fr       */
+/*   Updated: 2021/05/14 13:22:26 by dsantama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,11 @@ int swap_b(t_data *data)
 int push_b(t_data *data)
 {
 	int		i;
+	int		n;
 	char	c;
 
 	i = ft_strlen(data->a);
+	n = data->num;
 	if (i == 0)
 		return (0);
 	i = 0;
@@ -58,8 +60,44 @@ int push_b(t_data *data)
 		i++;
 	}
 	data->b[data->num] = c;
+	while(n > 0)
+	{
+		c = data->b[n];
+		data->b[n] = data->b[n - 1];
+		data->b[n - 1] = c;
+		n--;
+	}
 	data->num++;
-	printf("%s\n%s\n", data->a, data->b);
 	printf("pb\n");
+	return (0);
+}
+
+int push_a(t_data *data)
+{
+	int		i;
+	int		n;
+	char	c;
+
+	i = ft_strlen(data->b);
+	n = data->num;
+	if (i == 0)
+		return (0);
+	i = 0;
+	c = data->b[0];
+	while(data->b[i] != '\0')
+	{
+		data->b[i] = data->b[i + 1];
+		i++;
+	}
+	data->a[data->num] = c;
+	while(n > 0)
+	{
+		c = data->a[n];
+		data->a[n] = data->a[n - 1];
+		data->a[n - 1] = c;
+		n--;
+	}
+	data->num++;
+	printf("pa\n");
 	return (0);
 }
