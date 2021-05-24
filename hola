@@ -1,0 +1,20 @@
+	n = 0;
+	i = 0;
+	while(data->a[i] != '\0')
+		i++;
+	printf("A: ");
+	while(n < data->args_a)
+	{
+		printf("%i ", data->a[n]);
+		n++;
+	}
+	n = 0;
+	i = 0;
+	while(data->b[i] != '\0')
+		i++;
+	printf("\nB: ");
+	while(n < data->args_b)
+	{
+		printf("%i ", data->b[n]);
+		n++;
+	}
