@@ -6,7 +6,7 @@
 /*   By: dsantama <dsantama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 12:43:18 by dsantama          #+#    #+#             */
-/*   Updated: 2021/05/24 12:12:28 by dsantama         ###   ########.fr       */
+/*   Updated: 2021/06/02 09:45:29 by dsantama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void rotate_a(t_data *data)
 		data->a[i] = data->a[i + 1];
 		i++;
 	}
-	data->a[n] = change;
+	data->a[n - 1] = change;
 	printf("ra\n");
 }
 
@@ -76,6 +76,12 @@ void rotate_b(t_data *data)
 		data->b[i] = data->b[i + 1];
 		i++;
 	}
-	data->b[n] = change;
+	data->b[n - 1] = change;
 	printf("rb\n");
+}
+
+void rotate_rr(t_data *data)
+{
+	rotate_a(data);
+	rotate_b(data);
 }

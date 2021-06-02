@@ -6,7 +6,7 @@
 /*   By: dsantama <dsantama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/12 12:01:25 by dsantama          #+#    #+#             */
-/*   Updated: 2021/05/24 12:08:48 by dsantama         ###   ########.fr       */
+/*   Updated: 2021/06/02 09:46:12 by dsantama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -126,4 +126,10 @@ int push_a(t_data *data)
 	data->args_a++;
 	printf("pa\n");
 	return (0);
+}
+
+void rotate_rrr(t_data *data)
+{
+	rev_rotate_a(data);
+	rev_rotate_b(data);
 }

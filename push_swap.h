@@ -6,7 +6,7 @@
 /*   By: dsantama <dsantama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/12 10:24:42 by dsantama          #+#    #+#             */
-/*   Updated: 2021/05/24 11:13:13 by dsantama         ###   ########.fr       */
+/*   Updated: 2021/06/02 09:45:21 by dsantama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,6 @@ void 				rev_rotate_a(t_data *data);
 void 				rev_rotate_b(t_data *data);
 void 				rotate_a(t_data *data);
 void 				rotate_b(t_data *data);
+void 				rotate_rr(t_data *data);
+void 				rotate_rrr(t_data *data);
 #endif
